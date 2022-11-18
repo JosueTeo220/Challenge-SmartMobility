@@ -12,6 +12,7 @@ body{
 img{
     filter: invert(100%);
 }
+
 .corOffCanvas{
     background-color: #181e24;
 }
@@ -21,7 +22,7 @@ img{
     align-items: center;
 }
 .a{
-    margin-top: 20%;
+    margin-top: 450px;
     position: absolute;
 }
 .title{
