@@ -7,11 +7,13 @@ h1{
 }
 
 p{
+    margin-bottom: 0;
+    margin-top: 20em;
     color: #fff;
 }
 
-body{
-    background-color: #12161a;
+section{
+    background-color: #181e24;
 }
 img{
     filter: invert(100%);
@@ -31,8 +33,10 @@ img{
   
   ::-webkit-scrollbar-thumb:hover {
     background: #28323c;
-  }  
+  }
+
 .corOffCanvas{
+    transition: 1.3s;
     background-color: #181e24;
 }
 #imagemPredios{
@@ -52,7 +56,9 @@ img{
     text-shadow: 0px 0px 0px 0px blue;
     color: aqua;
 }
+
 .menu {
+  box-shadow: 3px 3px 3px 1px #000000b3;
   background: #fff;
   border-radius: 50%;
   width: 60px;
