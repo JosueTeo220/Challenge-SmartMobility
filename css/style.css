@@ -15,7 +15,7 @@ p{
     color: #fff;
 }
 span{
-  text-shadow: 5px 4px 10px hsla(240, 100%, 50%, 0.414);
+  text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
   animation: 4s linear fade-in;
 }
 input {
@@ -25,6 +25,9 @@ input {
 section{
     height: 100em;
     background-color: #181e24;
+}
+a{
+  text-decoration: none;
 }
 img{
     scale: 0.5;
@@ -38,6 +41,14 @@ img{
 }
 .title{
     margin-top: 20%;
+}
+.menulinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 4px;
+  margin-bottom: 2px;
 }
 .titleFocus{
     
@@ -129,7 +140,7 @@ img{
   opacity: 1;
 }
 .scrolled.fade-in {
-  animation: fade-in 1s ease-in-out both;
+  animation: fade-in-right 2s ease-in-out both;
 }
 @keyframes fade-in {
   0% {
@@ -137,7 +148,19 @@ img{
     opacity: 0;
   }
   100% {
-    text-shadow: 5px 4px 10px hsla(240, 100%, 50%, 0.395);
+    text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right{
+  0% {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
