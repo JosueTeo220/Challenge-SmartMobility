@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
 }
+
 h1{
-  font-size: 100%;
     color: white;
 }
 body{
@@ -23,16 +23,14 @@ input {
 }
 
 section{
+  
     height: 100em;
     background-color: #181e24;
 }
 a{
   text-decoration: none;
 }
-img{
-    scale: 0.5;
-    filter: invert(100%);
-}
+
 
 
 .corOffCanvas{
@@ -54,26 +52,7 @@ img{
     
     color: aqua;
 }
-#imagensPredio1{
-  z-index: 1;
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
-  background-image: url('img/predio1.png');
-  position: absolute;
-}
-.imagensPredio2{
-  background-position: ();
-  position: absolute;
-}
-.imagensPredio3{
-  background-position: ();
-  position: absolute;
-}
-.imagensPredio4{
-  background-position: ();
-  position: absolute;
-}
+
 
 .menu {
   box-shadow: 3px 3px 3px 1px #00000084;
@@ -140,16 +119,17 @@ img{
   opacity: 1;
 }
 .scrolled.fade-in {
-  animation: fade-in-right 2s ease-in-out both;
+  animation: fade-in 2s ease-in-out both;
 }
 @keyframes fade-in {
   0% {
     text-shadow: 5px 4px 10px hsla(0, 0%, 14%, 0.588);
     opacity: 0;
+
   }
   100% {
     text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
-    opacity: 1;
+    opacity: 1;  
   }
 }
 @keyframes fade-in-right{

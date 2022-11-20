@@ -31,6 +31,5 @@ const animateScroll = () =>{
         }
     })
 }
-window.addEventListener("scroll", ()=>{
-    animateScroll();
-})
+
+window.addEventListener('scroll', () => { animateScroll(); });
