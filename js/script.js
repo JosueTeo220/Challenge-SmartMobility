@@ -13,7 +13,7 @@ const elementoForDaTela = (element) => {
         elementoTop > (window.innerHeight || document.documentElement.clientHeight)
     );
 }
-const displayElemento = (elemento) => {
+const showElemento = (elemento) => {
     elemento.classList.add('scrolled');
 }
 const hideElemento = (elemento) => {
@@ -23,7 +23,7 @@ const animateScroll = () =>{
     scrolledElement.forEach((element) =>{
         if(elementoNaTela(element, 1.25)){
             console.log('elementoNaTela');
-            displayElemento(element);
+            showElemento(element);
         }
         else if(elementoForDaTela(element)){
             console.log('elementoForaTela')
