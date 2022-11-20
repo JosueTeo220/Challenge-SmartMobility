@@ -11,23 +11,28 @@ p{
     margin-top: 20em;
     color: #fff;
 }
+span{
+  animation: 1s linear fade-in;
+}
+input {
+  display: none;
+}
 
 section{
     background-color: #181e24;
 }
 img{
+    scale: 0.5;
     filter: invert(100%);
 }
 ::-webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    border-radius: 4px;
     background: #f1f1f1;
   }
   
   ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
     background: #1e262e;
   }
   
@@ -39,30 +44,25 @@ img{
     transition: 1.3s;
     background-color: #181e24;
 }
-#imagemPredios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.a{
-    margin-top: 450px;
-    position: absolute;
-}
+
 .title{
+  padding-bottom: 30em;
     margin-top: 20%;
 }
-
 .titleFocus{
     text-shadow: 0px 0px 0px 0px blue;
     color: aqua;
 }
-
+.imagensPredio{
+  
+  position: relative;
+}
 .menu {
-  box-shadow: 3px 3px 3px 1px #000000b3;
+  box-shadow: 3px 3px 3px 1px #00000084;
   background: #fff;
   border-radius: 50%;
   width: 60px;
-  height: 60px;
+  height: 60px; 
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -98,10 +98,25 @@ img{
   bottom: -10px;
 }
 
-input {
-  display: none;
+
+.scrollView {
+  opacity: 0;
+  transition: opacity 500ms;
 }
-@keyframes opacity {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+
+.scrollView.scrolled {
+  opacity: 1;
+}
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+@keyframes fade-in {
+  0% {
+    scale: 0.2;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
 }
