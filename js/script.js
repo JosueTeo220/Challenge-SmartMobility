@@ -1,5 +1,5 @@
 const scrolledElement = document.querySelectorAll('.scrollView');
-console.log('ola')
+console.log('test DOM')
 
 const elementoNaTela = (element, dividendo = 1) => {
     const elementoTop = element.getBoundingClientRect().top;
