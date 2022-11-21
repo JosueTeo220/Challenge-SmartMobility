@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Ubuntu:wght@300&display=swap');
+
+
 *{
   padding: 0;
   margin: 0;
 }
 
 h1{
-  font-size: 5vh;
+  font-family: 'Oswald', sans-serif;
+  font-size: calc(5vw + 20px);
     color: white;
 }
 body{
   background-color: #ffffff;
 }
 p{
-    margin-bottom: 0;
-    margin-top: 20em;
-    color: #fff;
+  font-size: calc(0.5vw + 10px);
+  font-family: 'Ubuntu', sans-serif;
+    color: #181e24
 }
 span{
   animation: 4s linear fade-in;
@@ -23,7 +27,7 @@ input {
   display: none;
 }
 section{
-    height: 70rem;
+    height: 80rem;
     background-color: #181e24;
 }
 a{
@@ -31,15 +35,26 @@ a{
 }
 img{
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
-
-.flexImg{
-  margin-top: 100px;
-  justify-content: right ;
+.imgPredio{
   display: flex;
   align-items: center;
+  filter: invert(100% );
   position: absolute;
+  z-index: 0;
+}
+.flexPredio{
+  animation: 2s linear opacity;
+  margin-top:2vw;
+  display: flex;
+  align-items: center;
+}
+.flexImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .corOffCanvas{
     transition: 1.3s;
@@ -47,12 +62,15 @@ img{
 }
 
 .title{
-  
-  text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
-  padding: 0;
-    margin-top: 20%;
+  animation: 2.5s linear shadowUp;
+  border-radius: 40px;
+  box-shadow: 3px 3px 3px 6px #171c21;
+  width: fit-content;
+  padding: 40px;
+  text-shadow: 5px 4px 6px hsla(240, 93%, 62%, 0.395);
+    margin-top: 15%;
 }
-.menulinks{
+.menuLink{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +103,10 @@ img{
   top: 29px;
   left: 15px;
   transition: 0.5s ease-in-out;
+}
+.menuEnter{
+  transition: 1s;
+  background-color: #28323c;
 }
 .hamburguer:before,.hamburguer:after {
     animation: 2s linear opacity;
@@ -129,8 +151,11 @@ img{
 .scrollView.scrolled {
   opacity: 1;
 }
-.scrolled.fade-in-left {
+.scrolled.fade-in {
   animation: fade-in 2s ease-in-out both;
+}
+.scrolled.fade-in-left {
+  animation: fade-in-left 2s ease-in-out both;
 }
 @keyframes opacity{
   0%{
@@ -140,8 +165,20 @@ img{
     opacity: 1;
   }
 }
+@keyframes shadowUp{
+  0%{
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 0px #171c21;
+  }
+  100%{
+    border-radius: 40px;
+
+    box-shadow: 3px 3px 3px 6px #171c21;
+  }
+}
 @keyframes fade-in {
   0% {
+    
     text-shadow: 5px 4px 10px hsla(0, 0%, 14%, 0.588);
     opacity: 0;
   }
