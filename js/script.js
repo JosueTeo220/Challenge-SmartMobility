@@ -7,7 +7,21 @@ menuLink.forEach(hover => {
     hover.addEventListener('mouseenter', () => {
         console.log('entrou')
         hover.classList.add('menuEnter')
-        
+
+    });
+    hover.addEventListener('mouseleave', () => {
+            console.log('saiu')
+            hover.classList.remove('menuEnter')
+    })
+    
+})
+const menuHeader = document.querySelectorAll('.headerLink')
+menuLink.forEach(hover => {
+    console.log('entrou')
+    hover.addEventListener('mouseenter', () => {
+        console.log('entrou')
+        hover.classList.add('menuEnter')
+
     });
     hover.addEventListener('mouseleave', () => {
             console.log('saiu')
@@ -42,7 +56,7 @@ const animateScroll = () =>{
             console.log('elementoNaTela');
             showElemento(element);
         }
-        else if(elementoForDaTela(element)){
+        else{
             console.log('elementoForaTela')
             hideElemento(element);
         }

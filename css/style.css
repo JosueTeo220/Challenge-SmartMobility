@@ -5,7 +5,9 @@
   padding: 0;
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 h1{
   font-family: 'Oswald', sans-serif;
   font-size: calc(5vw + 20px);
@@ -27,15 +29,33 @@ input {
   display: none;
 }
 section{
-    height: 80rem;
+    height: 80em;
     background-color: #181e24;
 }
 a{
+  color: #fff;
   text-decoration: none;
+}
+a:hover{
+  color: #fff;
 }
 img{
   position: absolute;
   z-index: 1;
+}
+#menuHeader{
+  padding-right: 40px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100px;
+  background-color: #181818;
+}
+.headerLink{
+  padding: 10px 30px;
+  box-shadow: 1px 1px 1px 1px #000000;
+  animation: 1s linear opacity;
+  margin: 10px;
 }
 .imgPredio{
   display: flex;
@@ -157,6 +177,16 @@ img{
 .scrolled.fade-in-left {
   animation: fade-in-left 2s ease-in-out both;
 }
+@media (max-width: 767px) {
+  p{
+    font-size: 12px;
+
+  }
+  section{
+    height: 50em;
+    background-color: #181e24;
+}
+}
 @keyframes opacity{
   0%{
     opacity: 0;
@@ -167,7 +197,7 @@ img{
 }
 @keyframes shadowUp{
   0%{
-    border-radius: 10px;
+    border-radius: 2px;
     box-shadow: 0px 0px 0px 0px #171c21;
   }
   100%{
