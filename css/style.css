@@ -4,6 +4,7 @@
 }
 
 h1{
+  font-size: 5vh;
     color: white;
 }
 body{
@@ -15,29 +16,40 @@ p{
     color: #fff;
 }
 span{
-  text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
   animation: 4s linear fade-in;
 }
 input {
+  z-index: 1;
   display: none;
 }
-
 section{
-  
-    height: 100em;
+    height: 70rem;
     background-color: #181e24;
 }
 a{
   text-decoration: none;
 }
+img{
+  position: absolute;
+  z-index: -1;
+}
 
-
-
+.flexImg{
+  margin-top: 100px;
+  justify-content: right ;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
 .corOffCanvas{
     transition: 1.3s;
     background-color: #181e24;
 }
+
 .title{
+  
+  text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
+  padding: 0;
     margin-top: 20%;
 }
 .menulinks{
@@ -49,12 +61,11 @@ a{
   margin-bottom: 2px;
 }
 .titleFocus{
-    
     color: aqua;
 }
 
-
 .menu {
+  z-index: 0;
   box-shadow: 3px 3px 3px 1px #00000084;
   background: #fff;
   border-radius: 50%;
@@ -118,14 +129,21 @@ a{
 .scrollView.scrolled {
   opacity: 1;
 }
-.scrolled.fade-in {
+.scrolled.fade-in-left {
   animation: fade-in 2s ease-in-out both;
+}
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 @keyframes fade-in {
   0% {
     text-shadow: 5px 4px 10px hsla(0, 0%, 14%, 0.588);
     opacity: 0;
-
   }
   100% {
     text-shadow: 5px 4px 10px hsla(240, 93%, 62%, 0.395);
@@ -136,6 +154,18 @@ a{
   0% {
     -webkit-transform: translateX(-300px);
     transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left{
+  0% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
     opacity: 0;
   }
   100% {
