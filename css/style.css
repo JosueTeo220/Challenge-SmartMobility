@@ -241,3 +241,30 @@ img{
     opacity: 1;
   }
 }
+
+
+.motivacao{
+  border: 1px solid rgba(172, 255, 47, 0.559);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 420px;
+  height: 400px;
+  margin-top: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.803);
+  display: inline-block;
+  overflow: auto;
+}
+
+.imagemInformacoes{
+  margin-top: -260px;
+  position: absolute;
+  background-image: url(/img/eVTOL.png) !important;
+  background-size: 40%;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  align-items: center;
+  background-position: center;
+}
