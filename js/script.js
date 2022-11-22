@@ -16,12 +16,11 @@ menuLink.forEach(hover => {
     
 })
 const menuHeader = document.querySelectorAll('.headerLink')
-menuLink.forEach(hover => {
+menuHeader.forEach(hover => {
     console.log('entrou')
     hover.addEventListener('mouseenter', () => {
         console.log('entrou')
         hover.classList.add('menuEnter')
-
     });
     hover.addEventListener('mouseleave', () => {
             console.log('saiu')
