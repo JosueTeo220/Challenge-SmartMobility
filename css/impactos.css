@@ -13,10 +13,6 @@
 html{
   scroll-behavior: smooth;
 }
-span{
-  font-style: italic; 
-  color: rgb(0, 229, 255);
-}
 h1{
   font-family: 'Oswald', sans-serif;
   font-size: calc(5vw + 20px);
@@ -28,14 +24,14 @@ body{
 p{
   font-size: calc(0.5vw + 10px);
   font-family: 'Ubuntu', sans-serif;
-    color: #181e24
+    color:white
 }
 input {
   z-index: 1;
   display: none;
 }
 section{
-    height: 60em;
+    height: 100em;
     background-color: #181e24;
 }
 a{
@@ -273,60 +269,6 @@ img{
   animation: fade-in-left 2s ease-in-out both;
 }
 
-/*
-  Media Scan
-*/
-@media (max-width: 767px) {
-  #menuHeader{
-    font-size: 10px;
-    padding-right: 20px;
-  }
-  .headerLink{
-    border-radius: 10px;
-    padding: 10px 20px;
-    animation: 1s linear opacity;
-    margin: 10px;
-  }
-  p{
-    font-size: 12px;
-
-  }
-    section{
-      height: 50em;
-      background-color: #181e24;
-  }
-  h1{
-    font-size: 2em;
-  }
-  .imageStatic{
-    height: 300px;
-  }
-}
-/*
-  Animations
-*/
-@keyframes evtolAnimation{
-  0%{
-    transform: rotate(0deg);
-
-    background-position-x: 0%;
-  }
-  50%{
-
-    background-position-y: 10px;
-  }
-  75%{
-    transform: rotate(5deg);
-
-    background-position-y: 40px;
-
-  }
-  100%{
-    transform: rotate(10deg);
-    background-position-x: 75%;
-    background-position-y: 20px;
-  }
-}
 @keyframes opacity{
   0%{
     opacity: 0;
@@ -337,13 +279,12 @@ img{
 }
 @keyframes shadowUp{
   0%{
-    background-color: #10171d;
     border-radius: 2px;
     box-shadow: 0px 0px 0px 0px #171c21;
   }
   100%{
     border-radius: 40px;
-    background-color: #161c21;
+
     box-shadow: 3px 3px 3px 6px #171c21;
   }
 }
@@ -384,28 +325,75 @@ img{
 }
 
 
-.motivacao{
-  border: 1px solid rgba(172, 255, 47, 0.559);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  width: 420px;
-  height: 400px;
-  margin-top: 100px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.803);
-  display: inline-block;
-  overflow: auto;
+.impactos{
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 25px;
+    width: 420px;
+    margin-bottom: 3%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.803);
+    box-shadow: 1px 1px 10px 10px #283039;
+    height: 7%;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.imagemInformacoes{
-  margin-top: -260px;
-  position: absolute;
-  background-image: url(/img/eVTOL.png) !important;
-  background-size: 40%;
-  width: 100%;
-  height: 300px;
-  background-repeat: no-repeat;
-  align-items: center;
-  background-position: center;
+.containerPrincipal{
+    display: flex;
+    border: 1px solid white;
+    height: 1100px;
+    border-radius: 1cm;
+    padding: 10px;
+    margin: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+h2{
+    justify-content: center;
+    display: flex;
+}
+
+.graficos{
+    display: block;
+    border: 1px solid aqua;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.imgGraficos1, .imgGraficos2, .imgGraficos3{
+    background-image: url(/img/ambulancia2.png);
+    width: 100%;
+    height: 240px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.imgGraficos2{
+    background-image: url(/img/grafico2.png);
+    border-color: 1px solid white;
+}
+
+.imgGraficos3{
+    background-image: url(/img/grafico3.png);
+}
+
+.tituloGraficos{
+    font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+
 }

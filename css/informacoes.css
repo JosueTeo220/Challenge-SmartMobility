@@ -13,10 +13,7 @@
 html{
   scroll-behavior: smooth;
 }
-span{
-  font-style: italic; 
-  color: rgb(0, 229, 255);
-}
+
 h1{
   font-family: 'Oswald', sans-serif;
   font-size: calc(5vw + 20px);
@@ -272,59 +269,24 @@ img{
 .scrolled.fade-in-left {
   animation: fade-in-left 2s ease-in-out both;
 }
+@media (max-width: 1130px) {
 
-/*
-  Media Scan
-*/
-@media (max-width: 767px) {
-  #menuHeader{
-    font-size: 10px;
-    padding-right: 20px;
-  }
-  .headerLink{
-    border-radius: 10px;
-    padding: 10px 20px;
-    animation: 1s linear opacity;
-    margin: 10px;
-  }
-  p{
+  div{
+    padding:0px;
     font-size: 12px;
+    border-collapse: collapse;
+    margin-top:0px;
+    height: auto;
+    margin: auto;
+    padding-left: 70px;
+  }
+  .imagemInformacoes{
+    height: 20px;
+    margin-top: calc(0.5vh + 200px);
+  }
 
-  }
-    section{
-      height: 50em;
-      background-color: #181e24;
-  }
-  h1{
-    font-size: 2em;
-  }
-  .imageStatic{
-    height: 300px;
-  }
-}
-/*
-  Animations
-*/
-@keyframes evtolAnimation{
-  0%{
-    transform: rotate(0deg);
-
-    background-position-x: 0%;
-  }
-  50%{
-
-    background-position-y: 10px;
-  }
-  75%{
-    transform: rotate(5deg);
-
-    background-position-y: 40px;
-
-  }
-  100%{
-    transform: rotate(10deg);
-    background-position-x: 75%;
-    background-position-y: 20px;
+  .motivacao2{
+    position: fixed;
   }
 }
 @keyframes opacity{
@@ -337,13 +299,12 @@ img{
 }
 @keyframes shadowUp{
   0%{
-    background-color: #10171d;
     border-radius: 2px;
     box-shadow: 0px 0px 0px 0px #171c21;
   }
   100%{
     border-radius: 40px;
-    background-color: #161c21;
+
     box-shadow: 3px 3px 3px 6px #171c21;
   }
 }
@@ -384,28 +345,42 @@ img{
 }
 
 
-.motivacao{
-  border: 1px solid rgba(172, 255, 47, 0.559);
+.motivacao, .motivacao2{
+  border: 1px solid aqua;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin-right: 5%;
+  margin-left: 100px;
+  margin-top: 25px;
   width: 420px;
-  height: 400px;
-  margin-top: 100px;
+  margin-bottom: 3%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgba(255, 255, 255, 0.803);
   display: inline-block;
-  overflow: auto;
+  box-shadow: 1px 1px 10px 10px #283039;
+}
+
+.motivacao2{
+    position: absolute;
+    margin-top: 460px;
 }
 
 .imagemInformacoes{
-  margin-top: -260px;
+  margin-top: 100vh;
   position: absolute;
   background-image: url(/img/eVTOL.png) !important;
   background-size: 40%;
   width: 100%;
-  height: 300px;
+  height: 65%;
   background-repeat: no-repeat;
   align-items: center;
   background-position: center;
+  display: block;
 }
+
+.containerPrincipal{
+  display: flex;
+  justify-content: center;
+}
+
+

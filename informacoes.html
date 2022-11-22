@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/informacoes.css">
+    <link rel="stylesheet" href="">
     <title>Challenge Stellantis</title>
 </head>
 <body>
+    <header>
+        <div id="menuHeader">
+            <a class="headerLink" href="index.html">Início</a>
+            <a class="headerLink" href="informacoes.html">Conheça o eVTOL</a>
+            <a class="headerLink" href="veiculosAutonomos.html">Veículos Autônomos</a>
+            <a class="headerLink" href="impactos.html">Impactos</a>
+        </div>
+    </header>
     <main>
         <section>
             <input id="menu-hamburguer" type="checkbox"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" />
             <div class="offcanvas offcanvas-end corOffCanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Menu principal</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="container-fluid menulinks">
-                        <a href="#">Menu 1</a>
-                    </div>
-                    <div class="container-fluid menulinks">
-                        <a href="#">Menu 2</a>
-                    </div>
-                    <div class="container-fluid menulinks">
-                        <a href="#">Menu 3</a>
-                    </div>
-                    <div class="container-fluid menulinks">
-                        <a href="#">Menu 4</a>
-                    </div>
+                    <a class="container-fluid menuLink" href="index.html">Início</a>
+                    <a class="container-fluid menuLink" href="informacoes.html">Conheça o eVTOL</a>
+                    <a class="container-fluid menuLink" href="veiculosAutonomos.html">Veículos Autônomos</a>
+                    <a class="container-fluid menuLink" href="impactos.html">Impactos</a>
                 </div>
             </div>
 
@@ -43,18 +43,19 @@
                     <span>Smart</span><span class="titleFocus">Mobility</span>
                 </h1>
             </div>
-            <div class="container-fluid motivacao">
-                <h2>O que é o eVTOL?</h2>
+            <div class="containerPrincipal">
+                <div class="container-fluid motivacao">
+                <h2>O que é o eVTOL?</h2><br>
                 <span>
-                    O eVTOL, do inglês, <i>electric vertical take-off and landing</i> significa "pouso e decolagem vertical à base de eletricidade". Ele é uma mistura de carro voador e helicóptero elétrico que pode revolucionar a mobilidade urbana. <br><br>
-                    A aeronave eVTOL utiliza energia elétrica para pairar, decolar e pousar verticalmente, garantindo a segurança dos passageiros e tripulantes a bordo.
+                    O eVTOL, do inglês <i>electric vertical take-off and landing</i>, significa "pouso e decolagem vertical à base de eletricidade". Ele é uma mistura de carro voador e helicóptero elétrico que pode revolucionar a mobilidade urbana. Ele surgiu com a premissa de ser um transporte coletivo e acessível, sustentável e com menos ruído.<br>
+                    A aeronave eVTOL utiliza energia elétrica para pairar, decolar e pousar verticalmente, garantindo a segurança dos passageiros e tripulantes a bordo. Venha conhecer a mais incrível novidade da navegação high-tech e vislumbre o futuro.
                 </span>
             </div>
             <div class="container-fluid motivacao">
-                <h2>O que diferencia o eVTOL?</h2>
+                <h2>O que diferencia o eVTOL?</h2><br>
                 <ul>
                     <li>
-                        O eVTOL possui mais rotores que um helicóptero, além de serem menores, o que traz mais segurança;
+                        O eVTOL possui mais rotores que um helicóptero, além de serem menores, trazendo mais segurança;
                     </li>
                     <li>
                         É movido a energia elétrica, tornando-o mais silencioso que os outros modos de transporte, além de ser mais sustentável;
@@ -70,20 +71,19 @@
                     </li>
                 </ul>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181e24" fill-opacity="1" d="M0,0L40,10.7C80,21,160,43,240,74.7C320,107,400,149,480,170.7C560,192,640,192,720,165.3C800,139,880,85,960,101.3C1040,117,1120,203,1200,218.7C1280,235,1360,181,1400,154.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-            </svg>
-            <div class="flexImg imagemInformacoes container-fluid">
-
+            <div class="container-fluid motivacao2">
+                <h2>E o trânsito?</h2>
+                <span>
+                    Os pesquisadores do eVTOL indicam que a mobilidade do trânsito pode melhorar em grande escala com a utilização desse modelo de transporte, uma vez que descongestionaria o trânsito terrestre, cada vez mais lotado de carros pessoais. Além disso, o tempo de deslocamento seria ainda menor, sendo que um trajeto de 20km poderia ser feito em poucos minutos.
+                </span>
             </div>
+            <div class="flexImg fade-in-left imagemInformacoes container-fluid"></div>
+            </div>
+            
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#181e24" fill-opacity="1" d="M0,0L40,10.7C80,21,160,43,240,74.7C320,107,400,149,480,170.7C560,192,640,192,720,165.3C800,139,880,85,960,101.3C1040,117,1120,203,1200,218.7C1280,235,1360,181,1400,154.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
         </svg>
-        <div class="flexImg container-fluid">
-            <img class="img-fluid scrollView fade-in-left" src="img/evtol3.webp" alt="eVTOL Image">
-        </div>
-            
-        
-        
+    
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
