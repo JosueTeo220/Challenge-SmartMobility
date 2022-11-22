@@ -13,6 +13,10 @@
 html{
   scroll-behavior: smooth;
 }
+span{
+  font-style: italic; 
+  color: rgb(0, 229, 255);
+}
 h1{
   font-family: 'Oswald', sans-serif;
   font-size: calc(5vw + 20px);
@@ -83,15 +87,19 @@ img{
     margin-top: 15%;
 }
 .title{
+  font-style: normal;
+  color: white;
   animation: 2s linear fade-in;
 }
 .titleFocus{
+  font-style: normal;
   animation: 2s linear fade-in;
   color: aqua;
 }
 .evtolTitle{
+  z-index: 1;
   transform: rotate(10deg);
-  background-image: url(/img/eVTOL.png) !important;
+  background-image: url('/img/eVTOL.png');
   animation: 4s linear evtolAnimation;
   background-repeat: no-repeat;
   background-position-x: 75%;
@@ -122,6 +130,23 @@ img{
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.imageStatic{
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20em;
+  height: 75vh;
+  text-shadow: 5px 4px 6px hsla(240, 93%, 62%, 0.395);
+  background-repeat: no-repeat;
+  background-image: url(/img/evtolLanding.webp);
+  background-size: 100% 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+#p-Fade2{
+  position: absolute;
 }
 /*
   Footer
@@ -209,17 +234,21 @@ img{
 /*
   ScrollView Animation
 */
+
 .scrollView {
   opacity: 0;
   transition: opacity 500ms;
 }
-
+.scrolled.opacity {
+  animation: opacity 1s ease-in-out both;
+}
 .scrollView.scrolled {
   opacity: 1;
 }
 .scrolled.fade-in {
   animation: fade-in 2s ease-in-out both;
 }
+
 .scrolled.fade-in-left {
   animation: fade-in-left 2s ease-in-out both;
 }
@@ -235,6 +264,12 @@ img{
     section{
       height: 50em;
       background-color: #181e24;
+  }
+  h1{
+    font-size: 2em;
+  }
+  .imageStatic{
+    height: 300px;
   }
 }
 /*
