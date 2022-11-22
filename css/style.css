@@ -165,6 +165,7 @@ img{
 }
 .menuEnter{
   transition: 1s;
+  box-shadow: 2px 2px 2px 2px #000;
   background-color: #28323c;
 }
 .hamburguer:before,.hamburguer:after {
