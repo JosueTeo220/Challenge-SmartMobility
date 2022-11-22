@@ -1,5 +1,4 @@
 console.log('test DOM')
-var control = 0
 const scrolledElement = document.querySelectorAll('.scrollView');
 const menuLink = document.querySelectorAll('.menuLink')
 menuLink.forEach(hover => {
