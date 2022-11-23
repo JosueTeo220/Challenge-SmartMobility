@@ -95,7 +95,7 @@ img{
 .evtolTitle{
   z-index: 1;
   transform: rotate(10deg);
-  background-image: url('/img/eVTOL.png');
+  background-image: url('../img/eVTOL.png');
   animation: 4s linear evtolAnimation;
   background-repeat: no-repeat;
   background-position-x: 75%;
@@ -136,7 +136,7 @@ img{
   height: 75vh;
   text-shadow: 5px 4px 6px hsla(240, 93%, 62%, 0.395);
   background-repeat: no-repeat;
-  background-image: url(/img/evtolLanding.webp);
+  background-image: url('../img/evtolLanding.webp');
   background-size: 100% 100%;
   width: 100%;
   background-attachment: fixed;
@@ -158,7 +158,7 @@ img{
   height: 60vh;
   text-shadow: 5px 4px 6px hsla(240, 93%, 62%, 0.395);
   background-repeat: no-repeat;
-  background-image: url(/img/eVTOLflaying.webp);
+  background-image: url('../img/eVTOLflaying.webp');
   background-size: 100% 100%;
   width: 100%;
   background-attachment: fixed;
@@ -404,17 +404,17 @@ h2{
     margin-right: 20px;
 }
 .imgGraficos1{
-  background-image: url(/img/ambulancia2.png);
+  background-image: url('../img/ambulancia2.png');
   border-color: 1px solid white;
 
 }
 .imgGraficos2{
-    background-image: url(/img/grafico2.png);
+    background-image: url('../img/grafico2.png');
     border-color: 1px solid white;
 }
 
 .imgGraficos3{
-    background-image: url(/img/grafico3.png);
+    background-image: url('../img/grafico3.png');
     border-color: 1px solid white;
 }
 
