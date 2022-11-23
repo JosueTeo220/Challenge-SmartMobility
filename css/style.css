@@ -100,7 +100,7 @@ img{
   z-index: 1;
   transform: rotate(10deg);
   background-image: url('../img/eVTOL.png');
-  animation: 4s linear evtolAnimation;
+  animation: 6s linear evtolAnimation infinite;
   background-repeat: no-repeat;
   background-position-x: 75%;
   background-position-y: 20px;
@@ -308,12 +308,12 @@ img{
 @keyframes evtolAnimation{
   0%{
     transform: rotate(0deg);
-
-    background-position-x: 0%;
+    background-position-y: 30px;
+    background-position-x: -50%;
   }
   50%{
 
-    background-position-y: 10px;
+    background-position-y: 5px;
   }
   75%{
     transform: rotate(5deg);
@@ -323,7 +323,7 @@ img{
   }
   100%{
     transform: rotate(10deg);
-    background-position-x: 75%;
+    background-position-x: 160%;
     background-position-y: 20px;
   }
 }

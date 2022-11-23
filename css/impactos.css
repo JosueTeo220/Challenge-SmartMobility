@@ -85,11 +85,11 @@ img{
 .title{
   font-style: normal;
   color: white;
-  animation: 2s linear fade-in;
+  animation: 5s linear fade-in;
 }
 .titleFocus{
   font-style: normal;
-  animation: 2s linear fade-in;
+  animation: 5s linear fade-in;
   color: aqua;
 }
 .evtolTitle{
