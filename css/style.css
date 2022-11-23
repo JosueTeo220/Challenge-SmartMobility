@@ -171,6 +171,16 @@ img{
 /*
   Footer
 */
+.imageFooter
+{
+  z-index: 1;
+  position: absolute;
+  background-image: url('../img/evtol2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 35%;
+  height: 35%;
+}
 /*
   Canvas Menu
 */
